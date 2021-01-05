@@ -21,7 +21,7 @@
         <div class="upload-img-wrap">
           <div class="upload-img">
             <img
-              src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593447137003&di=8e2c8ba51d3018e302c66a0bd851c7e8&imgtype=0&src=http%3A%2F%2Fimg.bqatj.com%2Fimg%2F4e384e839d6b6e96.jpg"
+              src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.16pic.com%2F00%2F13%2F20%2F16pic_1320444_b.jpg&refer=http%3A%2F%2Fpic.16pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611629607&t=2379438d87994ac4c76705939e73a975"
               alt
             />
           </div>
@@ -101,33 +101,33 @@ export default {
   props: {
     flagVisible: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data() {
     return {
       // 弹窗显示/关闭标记
-			dialogVisible: false,
-			// 表单
+      dialogVisible: false,
+      // 表单
       form: {
         parking_name: "",
         area: "",
-        type: ""
-      }
+        type: "",
+      },
     };
   },
   methods: {
     close() {
       this.$emit("update:flagVisible", false); // {}
-    }
+    },
   },
   watch: {
     flagVisible: {
       handler(newValue, oldValue) {
         this.dialogVisible = newValue;
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 <style lang='scss' scoped>
